@@ -1,0 +1,100 @@
+/* Style for the navigation bar */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigationBar {
+    display: flex;
+}
+
+.navbar-nav {
+    display: flex;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: green;
+}
+
+/* Style for the carousel and iqamah times */
+.flexProgramsAndIqamah {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.carousel-item img {
+    width: 100%;
+}
+
+.carousel-item .button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.iqamahTimes {
+    margin-top: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+/* Style for the footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.address {
+    flex: 1;
+}
+
+.socials {
+    flex: 1;
+}
+
+#container1, #container2, #container3, #container4 {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.contact {
+    flex: 1;
+}

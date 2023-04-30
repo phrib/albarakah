@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+* {
+    font-family: Helvetica, serif}
+
+.header {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid lightgray;
+    width: 100%;
+}
+
+.nav-item {
+    display: inline;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 18px;
+}
+
+
+.nav-item a {
+    transition: 0.2s ease;
+    transition-property: color;
+}
+
+.nav-item a {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item a:hover {
+    color: #A0CE4E;
+}
+
+.nav-link.active {
+    color: #A0CE4E;
+}
+
+#logo {
+    margin-left: auto;
+    height: 10.5vh;
+}
+
+.flexProgramsAndIqamah {
+    background-color: #A0CE4E;
+    display: grid;
+    grid-template-columns: 65% 10% 25%;
+    padding-top: 5vh;
+    padding-bottom: 2vh;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* black color with 50% opacity */
+}
+
+
+.carousel img {
+    width: 100%;
+    height: 60vh;
+}
+
+.carousel {
+    grid-column: 1 / 2;
+}
+
+.carousel-item .button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #A0CE4E;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.carousel-item .button:hover {
+    background-color: #fff;
+    color: #6E8F36;
+    border: 2px solid #A0CE4E;
+}
+
+.carousel {
+    position: relative;
+    left: 4%;
+}
+
+.iqamahTimes {
+    grid-column: 3 / 4;
+    position: relative;
+    right: 12%;
+}
+
+.iqamahTimes table {
+    height: 60vh;
+    width: 38vh;
+    border: solid lightgray;
+}
+
+.iqamahTimes {
+    background-color: #A0CE4E;
+}
+
+.iqamahTimes table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.iqamahTimes th, .iqamahTimes td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.iqamahTimes th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.iqamahTimes tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.iqamahTimes tr:hover {
+    background-color: #f5f5f5;
+}
+
+.iqamahTimes td:first-child {
+    font-weight: bold;
+    text-align: left;
+}
+
+#CONSTRUCTION {
+    display: block;
+    margin: 30px auto;
+}
+
+.footer {
+    background-color: #A0CE4E;
+    border-top: solid lightgray;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 10vh;
+    margin: 0;
+}
+
+.footer .address {
+    text-align: right;
+    flex: 2;
+    flex-basis: 0;
+}
+
+.address #placeName {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+
+.address #addy, #location {
+    color: #6E8F36;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1vh;
+}
+
+.footer .socials {
+    flex: 1;
+    flex-basis: 0;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.socials-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.socials-item .container {
+    width: 3vw;
+    height: 3vw;
+    background-color: white;
+    border: solid black;
+}
+
+.container img {
+    width: 3vw;
+    height: 3vw;
+}
+
+.footer .contact {
+    flex: 2;
+    flex-basis: 0;
+    color: #6E8F36;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer .contact .contactType {
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #A0CE4E;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+
+
+
+/* PHONES VIEW */
+@media only screen and (max-width: 768px) {
+
+    * {
+        font-family: Helvetica, serif}
+
+    .header {
+        background-color: red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: solid lightgray;
+        width: 100%;
+    }
+
+
+}

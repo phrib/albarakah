@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="BaseTemplate.css">
+    <link rel="stylesheet" type="text/css" href="slick-CarouselLibrary/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-CarouselLibrary/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="BaseTemplate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+
+</head>
+<body>
+
+    <!--The top bar-->
+    <div class="header">
+
+        <ul class="navbar">
+            <li class="nav-item">
+                <a class="nav-link active"  href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Get Involved</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Donate</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+            </li>
+        </ul>
+
+        <a href="#">
+            <img id="logo" src="alBarakahLogo.png" alt="Al Barakah Logo">
+        </a>
+    </div>
+
+    <div class="flexProgramsAndIqamah">
+
+
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="IMG1.png" alt="">
+                <a href="https://www.apple.com" class="button">Visit Apple's website</a>
+            </div>
+            <div class="carousel-item">
+                <img src="IMG2.png" alt="">
+                <a href="https://www.google.com" class="button">Visit Google's website</a>
+            </div>
+            <div class="carousel-item">
+                <img src="IMG3.png" alt="">
+                <a href="https://www.amazon.com" class="button">Visit Amazon's website</a>
+            </div>
+        </div>
+
+        <div class="iqamahTimes">
+            <table>
+                <thead>
+                <tr>
+                    <th>Prayer</th>
+                    <th>Iqamah Time</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Fajr</td>
+                    <td>5:00 AM</td>
+                </tr>
+                <tr>
+                    <td>Dhuhr</td>
+                    <td>1:30 PM</td>
+                </tr>
+                <tr>
+                    <td>Asr</td>
+                    <td>5:30 PM</td>
+                </tr>
+                <tr>
+                    <td>Maghrib</td>
+                    <td>Sunset</td>
+                </tr>
+                <tr>
+                    <td>Isha</td>
+                    <td>10:15 PM</td>
+                </tr>
+                <tr>
+                    <td>Friday Prayer</td>
+                    <td>1:15 PM</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+
+    <img id="CONSTRUCTION" src="CONSTRUCTION.png" alt="UNDER CONSTRUCTION" height="1000px" width="auto">
+
+
+    <div class="masjidExpansion">
+
+
+
+    </div>
+
+    <!--*******AT THE END OF THE PAGE********-->
+    <!--The bottom bar-->
+    <div class="footer">
+
+        <div class="address">
+            <p id="placeName">AL BARAKAH ISLAMIC CENTER</p>
+            <p id="addy">12 Hillcrest Street</p>
+            <p id="location">Halifax, NS, B3N 2W9</p>
+        </div>
+
+        <div class="socials">
+            <p>Connect</p>
+            <div class="socials-item">
+                <div class="container">
+                    <a href="#"><img src="facebook-logo.png" alt="facebook page" ></a>
+                </div>
+                <div class="container"></div>
+
+            </div>
+        </div>
+
+        <div class="contact">
+            <p><span class="contactType">Email:</span> contact@unitedmuslimsofhalifax.ca</p>
+            <p><span class="contactType">Phone:</span> 902-440-8034 </p>
+        </div>
+
+    </div>
+
+    <footer>&copy; Copyright 2023 - All rights reserved</footer>
+
+
+    <script type="text/javascript">
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach((link) => {
+            link.addEventListener('click', (event) => {
+                // prevent the link from navigating to a new page
+                event.preventDefault();
+
+                // remove the active class from all links
+                navLinks.forEach((link) => {
+                    link.classList.remove('active');
+                });
+
+                // add the active class to the clicked link
+                link.classList.add('active');
+            });
+        });
+    </script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick-CarouselLibrary/slick/slick.min.js"></script>
+</body>
+</html>
